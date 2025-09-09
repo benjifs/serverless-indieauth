@@ -1,0 +1,26 @@
+{
+  "name": "serverless-indieauth",
+  "description": "serverless indieauth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "indieweb",
+    "indieauth",
+    "netlify",
+    "serverless"
+  ],
+  "author": "Benji Encalada Mora (https://benji.dog)",
+  "homepage": "https://github.com/benjifs/serverless-indieauth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjifs/serverless-indieauth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjifs/serverless-indieauth/issues"
+  },
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@benjifs/indieauth": "github:benjifs/indieauth"
+  }
+}

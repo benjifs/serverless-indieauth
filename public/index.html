@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>barnacle</title>
+		<style>
+			html {
+				color-scheme: light dark;
+				font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>serverless-indieauth (barnacle)</h1>
+			<dl>
+				<dt><b>GET</b> <code>/auth</code></dt>
+				<dd>Show login form to <a href="https://indieauth.spec.indieweb.org/#authorization-request">Authenticate</a>.</dd>
+				<dt><b>POST</b> <code>/auth</code></dt>
+				<dd>Exchange <code>code</code> for <a href="https://indieauth.spec.indieweb.org/#profile-information">Profile Information</a>.</dd>
+				<dt><b>GET</b> <code>/token</code></dt>
+				<dd>Check if <code>token</code> is valid.</dd>
+				<dt><b>POST</b> <code>/token</code></dt>
+				<dd>Exchange <code>code</code> for <a href="https://indieauth.spec.indieweb.org/#access-token-response">Access Token</a>.</dd>
+			</dl>
+		</main>
+		<footer>
+			<a href="https://github.com/benjifs/serverless-indieauth">Source Code</a> -
+			<a href="https://benji.dog">benji</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[template.environment]
+  ME = "Your website url (https://example.com/)"
+  SECRET = "Random long string of characters"
+  PASSWORD_SECRET = "bcrypted password"
