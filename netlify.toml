@@ -10,6 +10,5 @@
   status = 200
 
 [template.environment]
-  ME = "Your website url (https://example.com/)"
   SECRET = "Random long string of characters"
   PASSWORD_SECRET = "bcrypted password"

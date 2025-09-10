@@ -15,19 +15,24 @@
 		<main>
 			<h1>serverless-indieauth (barnacle)</h1>
 			<dl>
+				<dt><b>GET</b> <code>/.well-known/oauth-authorization-server</code></dt>
+				<dd>Show <a href="https://indieauth.spec.indieweb.org/#indieauth-server-metadata">IndieAuth Server Metadata</a>.</dd>
 				<dt><b>GET</b> <code>/auth</code></dt>
 				<dd>Show login form to <a href="https://indieauth.spec.indieweb.org/#authorization-request">Authenticate</a>.</dd>
 				<dt><b>POST</b> <code>/auth</code></dt>
 				<dd>Exchange <code>code</code> for <a href="https://indieauth.spec.indieweb.org/#profile-information">Profile Information</a>.</dd>
-				<dt><b>GET</b> <code>/token</code></dt>
-				<dd>Check if <code>token</code> is valid.</dd>
+				<dt><b>GET</b> <code>/token</code> <small>(legacy)</small></dt>
+				<dd>Check if <code>token</code> is <a href="https://indieauth.spec.indieweb.org/#access-token-verification-response">valid</a>.</dd>
 				<dt><b>POST</b> <code>/token</code></dt>
 				<dd>Exchange <code>code</code> for <a href="https://indieauth.spec.indieweb.org/#access-token-response">Access Token</a>.</dd>
+				<dt><b>POST</b> <code>/introspect</code></dt>
+				<dd>Check if <code>token</code> is <a href="https://indieauth.spec.indieweb.org/#access-token-verification-response">valid</a>. Updated from <b>GET</b> <code>/token</code> on <a href="https://indieauth.spec.indieweb.org/#changes-from-26-november-2020-to-12-february-2022">Feb 2022</a>.</dd>
+				<dt><b>GET</b> <code>/userinfo</code></dt>
+				<dd>Get <a href="https://indieauth.spec.indieweb.org/#user-information">User Information</a>.</dd>
 			</dl>
 		</main>
 		<footer>
-			<a href="https://github.com/benjifs/serverless-indieauth">Source Code</a> -
-			<a href="https://benji.dog">benji</a>
+			<a href="https://github.com/benjifs/serverless-indieauth">Source Code</a> - <a href="https://benji.dog">benji</a>
 		</footer>
 	</body>
 </html>
