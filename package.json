@@ -2,7 +2,6 @@
   "name": "serverless-indieauth",
   "description": "serverless indieauth",
   "version": "1.0.0",
-  "main": "index.js",
   "keywords": [
     "indieweb",
     "indieauth",
