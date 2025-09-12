@@ -58,8 +58,9 @@ to the `<head>` of your site:
 <link rel="token_endpoint" href="https://auth.example.com/token">
 ```
 
-Where `auth.example.com` is your Netlify Site ID or [custom domain](https://docs.netlify.com/manage/domains/get-started-with-domains/) if you are using
-one.
+Where `auth.example.com` is the domain where your site gets deployed to, whether
+a Netlify subdomain (default) or [custom domain](https://docs.netlify.com/manage/domains/get-started-with-domains/)
+if you are using one.
 
 By default, this project sets up the following endpoints at the following routes:
 
