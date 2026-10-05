@@ -10,5 +10,6 @@
   status = 200
 
 [template.environment]
-  SECRET = "Random long string of characters"
   PASSWORD_SECRET = "bcrypted password"
+  PRIVATE_KEY = "RSA Private Key"
+  PUBLIC_KEY = "RSA Public Key"

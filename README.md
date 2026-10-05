@@ -14,17 +14,23 @@ and [token](https://indieweb.org/token-endpoint) endpoint.
 When setting this project up on Netlify, you should be asked to configure the following
 **environment variables**:
 
-### `SECRET`
-A random generated string which will be used to create the access token. You can
-generate it with:
-- `openssl rand -hex 16`
-- Generate a [random string](https://generate-random.org/string-generator)
-
 ### `PASSWORD_SECRET`
 Your password hashed with [bcrypt](https://en.wikipedia.org/wiki/Bcrypt). To do so
 you can either:
 - `htpasswd -bnBC 10 "" toomanysecrets | cut -d : -f 2` where "toomanysecrets" is the password
 - Use [this website](https://www.bcrypt.io/) to create the hash
+
+### `PRIVATE_KEY`
+You need to create a Public and Private RSA key to sign the tokens. To create a private key:
+```
+openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out private.pem
+```
+**IMPORTANT**: You should not share or add `private.pem` to your repository.
+
+### `PUBLIC_KEY`
+```
+openssl pkey -in private.pem -pubout -out public.pem
+```
 
 ### Routes
 Optionally, you can customize the routes if you would like them to be different
