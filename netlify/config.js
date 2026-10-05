@@ -1,4 +1,4 @@
-import { AuthHandler } from './src/index.js'
+import { AuthHandler } from '@benjifs/indieauth'
 const { PASSWORD_SECRET, PRIVATE_KEY, PUBLIC_KEY } = process.env
 export const indieauth = new AuthHandler({
 	passwordSecret: PASSWORD_SECRET,
